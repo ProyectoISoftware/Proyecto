@@ -4,7 +4,7 @@ namespace Publicaciones.Models
     {
         public string Id { get; set; }
 
-        public string Nombre { get; set; }
+        public string Nom { get; set; }
 
         public string Apellido { get; set; }
     
