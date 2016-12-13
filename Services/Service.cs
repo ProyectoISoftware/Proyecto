@@ -18,6 +18,8 @@ namespace Publicaciones.Service {
         List <Persona> Personas();
 
         void Initialize(); 
+
+        void Add(Documento documento);
     }
 
     /// <summary>
@@ -106,6 +108,14 @@ namespace Publicaciones.Service {
             Initialized = true;
 
             Logger.LogDebug("Inicializacion terminada :)");
+        }
+
+        public void Add(Documento documento){
+            // Guardo la Persona en el Backend
+            BackendContext.Documento.Add(documento); 
+
+            // Guardo los cambios
+            BackendContext.SaveChanges(); 
         }
     }
 
