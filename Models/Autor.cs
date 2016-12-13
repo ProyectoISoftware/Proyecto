@@ -16,11 +16,13 @@ namespace Publicaciones.Models
 
         public List<Grado> Grado { get; set;}  // ???
 
+        IMainService Service { get; set; }
+
         public void IngresarDocumento(string Titulo, string Resumen, DateTime FechaInicio, DateTime FechaTermino, string LineaDeInvestigacion, string AreaDesarrollo, string Tipo)
         {
             Documento Documento = new Documento(Titulo,Resumen,FechaInicio,FechaTermino,LineaDeInvestigacion,AreaDesarrollo,Tipo);
             Documentos.Add(Documento);
-            MainService.AddDocumento(Documento);
+            Service.Add(Documento);
         }
     }
 }
