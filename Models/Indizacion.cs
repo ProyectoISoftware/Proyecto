@@ -1,3 +1,4 @@
+using System;
 namespace Publicaciones.Models
 {
     public class Indizacion
