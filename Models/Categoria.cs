@@ -18,7 +18,7 @@ namespace Publicaciones.Models
             this.Id=id;
             this.Q= q;
             this.JIF=jif;
-            this.Fecha=DateTime(año,mes,dia);
+            this.Fecha=new DateTime(año,mes,dia);
             this.Indice= indi;
         }
     }

@@ -28,11 +28,11 @@ namespace Publicaciones.Models
             this.Id=id;
             this.DOI=doi;
             this.PaginaInicio=pagIni;
-            this.Volumne=volumen;
+            this.Volumen=volumen;
             this.Issue=issue;
             this.PaginaFinal=pagFin;
             this.NumeroArticulo= numArt;
-            this.fecha= DateTime(año,mes,día);
+            this.Fecha= new DateTime(año,mes,dia);
             this.CategoriaPublicar= catPub;
             this.CategoriaIndizar= catIndi;
         }
